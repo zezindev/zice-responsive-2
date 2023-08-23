@@ -4,13 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./imgs/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/about.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap"
       rel="stylesheet"
@@ -26,6 +32,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
+
     <title>ZICE</title>
   </head>
   <body>
@@ -80,17 +87,74 @@
         </div>
 
         <div class="container-img hidden">
-          <div><img src="./imgs/Elba.jpg" alt="" />
+          <div>
+            <img src="./imgs/Elba.jpg" alt="" />
             <h1>Elba Quirino - <span>CEO</span></h1>
-            <p>colocar colaps e criar um botão</p>
+            <p class="d-inline-flex gap-1">
+              <button
+                class="btn btn-primary"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseExample"
+                aria-expanded="false"
+                aria-controls="collapseExample"
+              >
+                Button with data-bs-target
+              </button>
+            </p>
+            <div class="collapse" id="collapseExample">
+              <div class="card card-body">
+                Some placeholder content for the collapse component. This panel
+                is hidden by default but revealed when the user activates the
+                relevant trigger.
+              </div>
+            </div>
           </div>
-          <div><img src="./imgs/Zé.jpg" alt="" />
+          <div>
+            <img src="./imgs/Zé.jpg" alt="" />
             <h1>José Rodrigues - <span>CTO</span></h1>
-            <p>fkjsdjfhklasdfjas</p>
+            <p class="d-inline-flex gap-1">
+              <button
+                class="btn btn-primary"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseExample"
+                aria-expanded="false"
+                aria-controls="collapseExample"
+              >
+                Button with data-bs-target
+              </button>
+            </p>
+            <div class="collapse" id="collapseExample">
+              <div class="card card-body">
+                Some placeholder content for the collapse component. This panel
+                is hidden by default but revealed when the user activates the
+                relevant trigger.
+              </div>
+            </div>
           </div>
-          <div><img src="./imgs/Raquel.jpg" alt="" />
+          <div>
+            <img src="./imgs/Raquel.jpg" alt="" />
             <h1>Raquel Quirino - <span>CFO</span></h1>
-            <p>fkjsdjfhklasdfjas</p>
+            <p class="d-inline-flex gap-1">
+              <button
+                class="btn btn-primary"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseExample"
+                aria-expanded="false"
+                aria-controls="collapseExample"
+              >
+                Button with data-bs-target
+              </button>
+            </p>
+            <div class="collapse" id="collapseExample">
+              <div class="card card-body">
+                Some placeholder content for the collapse component. This panel
+                is hidden by default but revealed when the user activates the
+                relevant trigger.
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -118,7 +182,7 @@
           </div>
         </div>
         <div class="container-links">
-          <div class="border-right">
+          <div class="border-right-style">
             <h3>SITEMAP</h3>
             <h5><a href="index.html">HOME</a></h5>
             <h5><a href="aboutus.html">ABOUT US</a></h5>
@@ -164,7 +228,7 @@
               >
             </h5>
           </div>
-          <div class="border-left">
+          <div class="border-left-style">
             <h3>CONTACT</h3>
             <h5><a href="mailto:contact@zice.com">contact@zice.com</a></h5>
           </div>

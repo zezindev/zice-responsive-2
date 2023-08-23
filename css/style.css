@@ -406,12 +406,12 @@ footer {
     gap: 3%;
   }
 
-  .border-right {
+  .border-right-style {
     border-right: solid 2px var(--color-terciary);
     padding: 0 8px;
   }
 
-  .border-left {
+  .border-left-style {
     border-left: solid 2px var(--color-terciary);
     padding: 0 8px;
   }
