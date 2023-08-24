@@ -14,6 +14,7 @@
   --fs-body: 1.6rem;
   --fs-header: clamp(4rem, 1rem + 5vw, 5.6rem);
   --fs-header-sm: clamp(3rem, 0.5rem + 3vw, 4rem);
+  --fs-header-special: clamp(1rem, 0.2rem + 2vw, 2rem);
 }
 
 .dark-theme {
@@ -111,18 +112,23 @@ span {
   color: var(--color-terciary);
 }
 
-.container-img {
+.section-colapse {
   width: clamp(33rem, 80%, 100rem);
-
-  margin: 8rem auto 0;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  text-align: center;
+
+  margin: 8rem auto 20rem;
 }
 
-.container-img img {
-  width: 25rem;
+.card-collapse {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.card-collapse img {
+  width: 70%;
   border-radius: 100%;
   border: 7px solid #fb2e00;
 
@@ -130,22 +136,92 @@ span {
   transform: translateY(0);
 }
 
-.container-img img:hover {
+.card-collapse img:hover {
   transform: translate(-5px, -10px);
   cursor: pointer;
 
   box-shadow: 4px 4px 10px #0b324c;
 }
 
-@media (max-width: 820px) {
-  .container-img {
-    justify-content: center;
-    align-items: center;
+.card-collapse h1 {
+  margin: 2rem 0;
+  font-size: var(--fs-header-special);
+}
+
+.details {
+  list-style: none;
+  border-radius: 10px;
+  border: 2px solid #fb2e00;
+
+  margin: 90% auto;
+  padding: 8px;
+  width: 80%;
+
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+}
+
+.summary {
+  list-style: none;
+  padding: 0.5em;
+}
+
+details[open] {
+  background-color: #fb2e00;
+  color: #e7eff6;
+}
+
+details[open] summary {
+  border-bottom: 2px solid #e7eff6;
+  color: #e7eff6;
+}
+
+@media (max-width: 999px) {
+  .details {
+    margin: 95% auto 0;
+  }
+}
+
+@media (max-width: 830px) {
+  .section-colapse {
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
 
+    margin: 8rem auto 20rem;
+  }
 
-    margin: 3rem auto;
-    padding: 0;
+  .card-collapse h1 {
+    margin: 1rem 0;
+    font-size: var(--fs-header-sm);
+  }
+
+  .card-collapse {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    padding-bottom: 20rem;
+  }
+
+  .details {
+    margin: 85% auto 0;
+  }
+
+  #elba {
+    padding-top: 2rem;
+  }
+
+  #raquel {
+    padding-bottom: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .details {
+    margin: 90% auto 0;
   }
 }
