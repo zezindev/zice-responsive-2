@@ -149,7 +149,6 @@ span {
 }
 
 .details {
-  list-style: none;
   border-radius: 10px;
   border: 2px solid #fb2e00;
 
@@ -165,7 +164,6 @@ span {
 }
 
 .summary {
-  list-style: none;
   padding: 0.5em;
 }
 
