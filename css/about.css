@@ -177,7 +177,11 @@ details[open] summary {
   color: #e7eff6;
 }
 
-@media (max-width: 999px) {
+@media (max-width: 1020px) {
+    .section-colapse {
+    margin: 8rem auto 27rem;
+  }
+
   .details {
     margin: 95% auto 0;
   }
