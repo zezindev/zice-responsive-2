@@ -208,8 +208,16 @@ span {
   position: absolute;
 }
 
+.details:hover {
+  cursor: pointer;
+}
+
 .summary {
   padding: 0.5em;
+}
+
+.summary:hover {
+  cursor: pointer;
 }
 
 details[open] {
