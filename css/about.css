@@ -31,6 +31,10 @@ span {
   color: var(--color-terciary);
 }
 
+h3 {
+  font-weight: 500;
+}
+
 .container {
   width: clamp(33rem, 80%, 150rem);
   height: 40rem;
