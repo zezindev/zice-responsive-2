@@ -312,6 +312,10 @@ details[open] summary {
   .details {
     margin: 85% auto 0;
   }
+  
+  .minds {
+    padding: 3rem 0 0;
+  }
 
   #raquel {
     padding-bottom: 0;
