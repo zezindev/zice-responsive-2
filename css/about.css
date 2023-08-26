@@ -140,7 +140,8 @@ span {
   display: flex;
   justify-content: center;
   align-items: center;
-
+  text-align: center;
+  
   margin: 18rem auto 0;
 }
 
@@ -279,10 +280,17 @@ details[open] summary {
   }
 
   .minds {
-    margin: 8rem auto 0;
-  }
+    width: clamp(33rem, 80%, 150rem);
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    margin: 10rem auto 0;
+}
 
-  .minds h1 {
+ .minds h1 {
     font-size: var(--fs-header-sm);
   }
 }
@@ -314,9 +322,16 @@ details[open] summary {
   }
   
   .minds {
-    margin: 3rem auto 0; 
+    width: clamp(33rem, 80%, 150rem);
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    margin: 3rem auto 0;
   }
-
+  
   #raquel {
     padding-bottom: 0;
   }
