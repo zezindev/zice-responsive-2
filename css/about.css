@@ -210,6 +210,8 @@ span {
 
 .details:hover {
   cursor: pointer;
+  background-color: #fb2e00;
+  color: #e7eff6;
 }
 
 .summary {
