@@ -306,6 +306,8 @@ details[open] summary {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
+  text-decoration: none;
+  color: #fb2e00;
 }
 
 .media-item {
@@ -319,6 +321,11 @@ details[open] summary {
 .media-item:hover {
   cursor: pointer;
   transform: translateY(-10px);
+}
+
+.media-container, .media-item a{
+  text-decoration: none;
+  color: var(--color-secondary);
 }
 
 @media (max-width: 1020px) {
