@@ -367,13 +367,14 @@ h3 {
   font-size: 8rem;
   margin: auto;
 
-  transition: transform 0.3s ease-out;
+  transition: all 0.3s ease-out;
   transform: translateY(0);
 }
 
 .tech-item:hover {
   cursor: pointer;
   transform: translateY(-10px);
+  color: var(--color-terciary);
 }
 
 .section-end {

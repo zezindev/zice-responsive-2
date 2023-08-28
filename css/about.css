@@ -310,22 +310,26 @@ details[open] summary {
   color: #fb2e00;
 }
 
+.media-container,
+.media-item a {
+  text-decoration: none;
+  color: var(--color-secondary);
+}
+
 .media-item {
   font-size: 8rem;
   margin: auto;
+}
 
-  transition: transform 0.3s ease-out;
+.media-item i {
+  transition: all 0.3s ease-out;
   transform: translateY(0);
 }
 
-.media-item:hover {
+.media-item i:hover {
   cursor: pointer;
   transform: translateY(-10px);
-}
-
-.media-container, .media-item a{
-  text-decoration: none;
-  color: var(--color-secondary);
+  color: #fb2e00;
 }
 
 @media (max-width: 1020px) {
