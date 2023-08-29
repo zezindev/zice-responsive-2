@@ -180,7 +180,7 @@ span {
 .card-collapse img {
   width: 70%;
   border-radius: 100%;
-  border: 7px solid #fb2e00;
+  border: 5px solid #fb2e00;
 
   transition: transform 0.3s ease-out;
   transform: translateY(0);
@@ -281,10 +281,6 @@ details[open] summary {
   flex-direction: column;
 }
 
-.section-media-text div {
-  padding: 10px;
-}
-
 .section-media-text h1 {
   font-size: var(--fs-header-sm);
 
@@ -330,6 +326,60 @@ details[open] summary {
   cursor: pointer;
   transform: translateY(-10px);
   color: #fb2e00;
+}
+
+.section-media-text-last {
+  margin: 8rem auto 0;
+  text-align: center;
+
+  color: var(--color-secondary);
+
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.section-media-text-last div {
+  padding: 10px;
+}
+
+.section-media-text div {
+  padding: 10px;
+}
+
+.section-media-text-last h1 {
+  font-size: var(--fs-header-sm);
+
+  margin-bottom: 2rem;
+}
+.section-media-text-last a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-decoration: none;
+  font-size: var(--fs-body);
+
+  color: #e7eff6;
+  background-color: var(--color-terciary);
+
+  border-radius: 7px;
+
+  width: 18rem;
+  padding: 15px 0;
+  margin: 5rem auto 10rem;
+
+  transition: transform 0.3s ease-out;
+  transform: translateY(0);
+}
+
+.section-media-text-last a:hover {
+  background-color: #e7eff6;
+  color: #fb2e00;
+
+  box-shadow: 2px 4px 15px 1px #0b324c;
+  transform: translateY(-10px);
 }
 
 @media (max-width: 1020px) {
