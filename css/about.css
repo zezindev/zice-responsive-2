@@ -190,7 +190,7 @@ span {
   transform: translate(-5px, -10px);
   cursor: pointer;
 
-  box-shadow: 4px 4px 10px #0b324c;
+  box-shadow: 4px 4px 10px rgb(11, 50, 76);
 }
 
 .card-collapse h1 {
@@ -292,6 +292,10 @@ details[open] summary {
   margin-bottom: 3rem;
 }
 
+.section-media-text div {
+  padding: 10px;
+}
+
 .section-media {
   width: clamp(33rem, 80%, 100rem);
   padding: 20px;
@@ -332,19 +336,19 @@ details[open] summary {
   margin: 8rem auto 0;
   text-align: center;
 
-  color: var(--color-secondary);
+  color: #e7eff6;
+  background-image: url(/imgs/woman-pc-smile-2.png);
+  object-fit: cover;
+
+  height: 67rem;
 
   display: flex;
-  justify-content: space-between;
-  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .section-media-text-last div {
-  padding: 10px;
-}
-
-.section-media-text div {
-  padding: 10px;
+  margin-right: 10%;
 }
 
 .section-media-text-last h1 {
@@ -352,6 +356,7 @@ details[open] summary {
 
   margin-bottom: 2rem;
 }
+
 .section-media-text-last a {
   display: flex;
   flex-direction: column;
@@ -380,6 +385,18 @@ details[open] summary {
 
   box-shadow: 2px 4px 15px 1px #0b324c;
   transform: translateY(-10px);
+}
+
+@media (max-width: 1350px) {
+  .section-media-text-last {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .section-media-text-last div {
+    margin-left: 5%;
+  }
 }
 
 @media (max-width: 1020px) {
@@ -511,6 +528,24 @@ details[open] summary {
 
   .partners a {
     padding-bottom: 3rem;
+  }
+
+  .section-media-text-last {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section-media-text-last div {
+    margin: 0;
+  }
+}
+
+@media (max-width: 705px) {
+  .section-media-text-last {
+    background-image: url(/imgs/woman-pc-smile-mobile.png);
+
+    height: 44rem;
   }
 }
 
