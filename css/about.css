@@ -337,7 +337,7 @@ details[open] summary {
   text-align: center;
 
   color: #e7eff6;
-  background-image: url(/imgs/woman-pc-smile-2.png);
+  background-image: url(https://zezindev.github.io/zice-responsive-2/imgs/woman-pc-smile-2.png);
   object-fit: cover;
 
   height: 67rem;
@@ -543,7 +543,7 @@ details[open] summary {
 
 @media (max-width: 705px) {
   .section-media-text-last {
-    background-image: url(/imgs/woman-pc-smile-mobile.png);
+    background-image: url(https://zezindev.github.io/zice-responsive-2/imgs/woman-pc-smile-mobile.png);
 
     height: 44rem;
   }
