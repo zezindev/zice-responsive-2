@@ -9,10 +9,14 @@
       sizes="32x32"
       href="./imgs/favicon-32x32.png"
     />
+    <link rel="stylesheet" href="./css/portifolio.css" />
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/portifolio.css">
     <link
       href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;800&amp;family=Nunito:wght@500&amp;display=swap"
       rel="stylesheet"
     />
     <link
@@ -26,6 +30,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+    />
+
     <title>ZICE</title>
   </head>
   <body>
@@ -55,34 +65,43 @@
           </ul>
         </nav>
       </header>
+
+      <section class="minds">
+        <div class="hidden">
+          <h1>What we <span>Did</span></h1>
+          <h3>See our works</h3>
+        </div>
+      </section>
+
       <section class="card-section">
-        <div class="card">
+        <div class="card hidden">
           <img src="./imgs/man-sweter.jpg" alt="Imagem 1" />
           <p>Descrição do Card 1</p>
         </div>
-        <div class="card">
+        <div class="card hidden">
           <img src="./imgs/man-sweter.jpg" alt="Imagem 2" />
           <p>Descrição do Card 2</p>
         </div>
-        <div class="card">
+        <div class="card hidden">
           <img src="./imgs/man-sweter.jpg" alt="Imagem 3" />
           <p>Descrição do Card 3</p>
         </div>
-        <div class="card">
+        <div class="card hidden">
           <img src="./imgs/man-sweter.jpg" alt="Imagem 4" />
           <p>Descrição do Card 4</p>
         </div>
-        <div class="card">
+        <div class="card hidden">
           <img src="./imgs/man-sweter.jpg" alt="Imagem 5" />
           <p>Descrição do Card 5</p>
         </div>
-        <div class="card">
+        <div class="card hidden">
           <img src="./imgs/man-sweter.jpg" alt="Imagem 6" />
           <p>Descrição do Card 6</p>
         </div>
       </section>
+
       <footer>
-        <div class="container-social">
+        <div class="container-social hidden">
           <a href="index.html"><img src="./imgs/zice.png" alt="ZICE Logo" /></a>
           <div class="social-icons">
             <a href=""><i class="fa-brands fa-instagram"></i></a>
@@ -91,7 +110,7 @@
             <a href=""> <i class="fa-brands fa-facebook"></i></a>
           </div>
         </div>
-        <div class="container-links">
+        <div class="container-links hidden">
           <div class="border-right-style">
             <h3>SITEMAP</h3>
             <h5><a href="index.html">HOME</a></h5>
@@ -144,7 +163,7 @@
           </div>
         </div>
       </footer>
-      <div class="container-copyright">
+      <div class="container-copyright hidden">
         <p>
           Copyright © 2023, ZICE Solutions. <br />
           <a href="#">Privacy Policy</a> | <a href="#">Terms Of Service</a>
@@ -152,6 +171,7 @@
       </div>
     </div>
   </body>
+  <script src="./js/animation.js"></script>
   <script src="./js/script.js"></script>
   <script src="./js/menu.js"></script>
 </html>

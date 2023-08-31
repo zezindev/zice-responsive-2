@@ -22,6 +22,41 @@
   --color-secondary: #e7eff6;
 }
 
+span {
+  color: var(--color-terciary);
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s, transform 1s;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.minds {
+  width: clamp(33rem, 80%, 150rem);
+  height: 35rem;
+  margin: auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-bottom: 4px solid #fb2e00;
+}
+
+.minds h1 {
+  font-size: var(--fs-header-sm);
+}
+
+.minds h3 {
+  font-weight: 500;
+}
+
 .card-section {
   max-width: clamp(33rem, 80%, 100rem);
 
@@ -33,10 +68,10 @@
   padding: 15rem 0;
 }
 
-.card {  
+.card {
   padding: 0 0 5rem;
   border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
   text-align: center;
 }
 
