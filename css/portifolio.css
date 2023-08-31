@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --ff-all: "Nunito", sans-serif;
+  --bg-primary: #e7eff6;
+  --color-primary: #2d2d2d;
+  --color-terciary: #fb2e00;
+
+  font-size: 62.5%;
+  --fs-body: 1.6rem;
+  --fs-header: clamp(4rem, 1rem + 5vw, 5.6rem);
+  --fs-header-sm: clamp(3rem, 0.5rem + 3vw, 4rem);
+  --fs-header-special: clamp(1rem, 0.2rem + 2vw, 2rem);
+}
+
+.dark-theme {
+  --bg-secondary: #021622;
+  --color-secondary: #e7eff6;
+}
+
+.card-section {
+  max-width: clamp(33rem, 80%, 100rem);
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+
+  margin: 0 auto;
+  padding: 15rem 0;
+}
+
+.card {  
+  padding: 0 0 5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0;
+}
+
+.card p {
+  margin-top: 10px;
+}
