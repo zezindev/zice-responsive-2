@@ -51,7 +51,7 @@ images.forEach((_, index) => {
 updateCarousel()
 
 // Automatically advance the carousel every 3 seconds
-setInterval(nextSlide, 4000)
+setInterval(nextSlide, 5000)
 
 // Add event listeners to the arrow buttons
 nextButton.addEventListener("click", nextSlide)
