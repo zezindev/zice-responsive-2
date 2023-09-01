@@ -95,14 +95,28 @@
   width: clamp(33rem, 80%, 100rem);
 
   margin: 10rem auto 0;
-  text-align: center;
+  padding: 3rem;
+  border-radius: 10px;
 
-  color: var(--color-secondary);
+  text-align: center;
 
   display: flex;
   justify-content: space-between;
 
   position: relative;
+
+  color: var(--color-secondary);
+
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  /* border: 1px solid rgba(255, 255, 255, 0.18); */
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
 
 span {
@@ -119,8 +133,20 @@ span {
   font-weight: 500;
 }
 
-.div-img img {
-  width: 80%;
+.div-img {
+  width: 50%;
+  position: relative;
+  transition: transform 0.3s ease-out;
+  transform: translateY(0);
+
+  margin: auto;
+  cursor: pointer;
+
+  border-radius: 10px;
+}
+
+.div-img img{
+  width: 100%;
   position: relative;
   transition: transform 0.3s ease-out;
   transform: translateY(0);
@@ -133,8 +159,6 @@ span {
 
 .div-img img:hover {
   transform: translate(-10px, -12px);
-
-  box-shadow: 2px 4px 15px 1px #0b324c;
 }
 
 .div-one {
@@ -143,8 +167,6 @@ span {
   flex-direction: column;
   justify-content: center;
   text-align: start;
-
-  border-top: solid 5px var(--color-terciary);
 }
 
 .info-two {
@@ -185,6 +207,17 @@ span {
   color: var(--color-secondary);
   border-radius: 10px;
 
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  /* border: 1px solid rgba(255, 255, 255, 0.18);  */
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+
   transition: transform 0.3s ease-out;
   transform: translateY(0);
 }
@@ -199,7 +232,7 @@ span {
   transform: translate(-5px, -10px);
   cursor: pointer;
 
-  box-shadow: 4px 4px 10px #0b324c;
+  /* box-shadow: 4px 4px 10px #0b324c; */
 }
 
 .card h2 {
@@ -649,7 +682,6 @@ h3 {
     flex-direction: column;
     justify-content: center;
 
-    border-top: solid 2px var(--color-terciary);
     padding: 2rem 0;
   }
 
