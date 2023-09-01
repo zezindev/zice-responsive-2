@@ -145,7 +145,7 @@ span {
   border-radius: 10px;
 }
 
-.div-img img{
+.div-img img {
   width: 100%;
   position: relative;
   transition: transform 0.3s ease-out;
@@ -310,51 +310,57 @@ h3 {
   position: relative;
 }
 
-.inner-div {
+.carousel-container {
   display: flex;
-  transition: transform 0.5s;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.image {
-  height: 38rem;
-  object-fit: cover;
+.carousel {
+  display: flex;
+  overflow: hidden;
+  position: relative;
 }
 
-.arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  cursor: pointer;
-  z-index: 1;
-  font-size: 18rem;
+.carousel img {
+  width: 100%;
+  height: auto;
+}
 
+.carousel-arrow {
   color: #fb2e00;
+  cursor: pointer;
+
+  font-size: 10rem;
 }
 
-.left-arrow {
-  left: -8px;
+#prev {
+  position: absolute;
 }
 
-.right-arrow {
-  right: -8px;
+#next {
+  position: absolute;
+  right: 0;
 }
 
-.pagination {
-  display: flex;
-  justify-content: center;
+.carousel-dots {
+  text-align: center;
   margin-top: 10px;
 }
 
 .dot {
+  display: inline-block;
   width: 10px;
   height: 10px;
-  border-radius: 50%;
-  background-color: #ccc;
   margin: 0 5px;
+  border-radius: 50%;
+  background-color: #8b8b8b;
   cursor: pointer;
 }
 
-.active-dot {
+.active {
   background-color: #fb2e00;
 }
 
@@ -506,28 +512,6 @@ h3 {
     position: relative;
   }
 
-  .image {
-    height: 30rem;
-    object-fit: cover;
-  }
-
-  .inner-div {
-    display: flex;
-    gap: 15%;
-  }
-
-  #img1 {
-    padding-left: 15%;
-  }
-
-  #img2 {
-    padding-right: 10%;
-  }
-
-  #img3 {
-    padding-right: 13%;
-  }
-
   .info-two {
     margin-top: 0;
     margin-bottom: 0;
@@ -546,16 +530,6 @@ h3 {
   }
 }
 
-@media (max-width: 1020px) {
-  #img1 {
-    padding-left: 5%;
-  }
-
-  #img2 {
-    padding-left: 5%;
-  }
-}
-
 @media (max-width: 912px) {
   .container img {
     height: 37rem;
@@ -567,22 +541,6 @@ h3 {
 
   .div-img #back-img {
     height: 32rem;
-  }
-
-  .outer-div {
-    width: 45%;
-    overflow: hidden;
-    position: relative;
-  }
-
-  .image {
-    height: 30rem;
-    object-fit: cover;
-  }
-
-  .inner-div {
-    display: flex;
-    gap: 16%;
   }
 }
 
@@ -615,26 +573,6 @@ h3 {
 
   .container a {
     margin: auto;
-  }
-
-  .outer-div {
-    width: 45%;
-    overflow: hidden;
-  }
-
-  .image {
-    height: 30rem;
-    object-fit: cover;
-  }
-
-  .inner-div {
-    display: flex;
-    gap: 10%;
-  }
-
-  #img1 {
-    padding-right: 15%;
-    padding-left: 0;
   }
 
   .div-if3 {
@@ -701,20 +639,7 @@ h3 {
   }
 
   .outer-div {
-    width: 45%;
-    overflow: hidden;
-
     margin: 0 auto;
-  }
-
-  .image {
-    height: 30rem;
-    object-fit: cover;
-  }
-
-  .inner-div {
-    display: flex;
-    gap: 10%;
   }
 
   .info-end {
@@ -731,20 +656,7 @@ h3 {
   }
 
   .outer-div {
-    width: 50%;
-    overflow: hidden;
-
     margin: 0 auto;
-  }
-
-  .image {
-    height: 30rem;
-    object-fit: cover;
-  }
-
-  .inner-div {
-    display: flex;
-    gap: 10%;
   }
 }
 
@@ -755,70 +667,12 @@ h3 {
 
     margin: 0 auto;
   }
-
-  #img1 {
-    padding-left: 8%;
-  }
-
-  #img2 {
-    padding-right: 2%;
-  }
-
-  #img3 {
-    padding-left: 8%;
-  }
-
-  .image {
-    height: 30rem;
-    object-fit: cover;
-  }
-
-  .inner-div {
-    display: flex;
-    gap: 10%;
-  }
-}
-
-@media (max-width: 540px) {
-  #img1 {
-    padding-left: 0;
-  }
 }
 
 @media (max-width: 510px) {
   .container img {
     height: 25rem;
   }
-
-  .outer-div {
-    width: 80%;
-    overflow: hidden;
-
-    margin: 0 auto;
-  }
-
-  #img1 {
-    padding-left: 0;
-  }
-
-  #img2 {
-    padding-right: 0;
-  }
-
-  #img3 {
-    padding-left: 0;
-  }
-
-  .image {
-    height: 30rem;
-    object-fit: cover;
-  }
-
-  .inner-div {
-    display: flex;
-    gap: 10%;
-  }
-
   .tech-container {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -839,34 +693,5 @@ h3 {
 
   .info p {
     font-size: var(--fs-body);
-  }
-
-  .outer-div {
-    width: 100%;
-    overflow: hidden;
-
-    margin: 0 auto;
-  }
-
-  #img1 {
-    padding-left: 2%;
-  }
-
-  #img2 {
-    padding-right: 2%;
-  }
-
-  #img3 {
-    padding-left: 8%;
-  }
-
-  .image {
-    height: 30rem;
-    object-fit: cover;
-  }
-
-  .inner-div {
-    display: flex;
-    gap: 10%;
   }
 }
