@@ -225,6 +225,7 @@ span {
 .details {
   border-radius: 10px;
   background: linear-gradient(to right, #fb2e00, #F16529 );
+  color: #e7eff6;
 
   margin: 90% auto;
   padding: 8px;
