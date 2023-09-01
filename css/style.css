@@ -91,6 +91,19 @@ header img {
   margin-left: 3rem;
 }
 
+#contact {
+  background: linear-gradient(to right, #fb2e00, #f16529);
+
+  color: #e7eff6;
+  border-radius: 7px;
+  padding: 10px;
+}
+
+#contact:hover{
+  background: linear-gradient( #ca2601, #ca2601);
+  color: #e7eff6;
+}
+
 #logo {
   cursor: pointer;
 }

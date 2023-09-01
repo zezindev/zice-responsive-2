@@ -51,7 +51,7 @@
   font-size: 2rem;
 
   color: #e7eff6;
-  background-color: var(--color-terciary);
+  background: linear-gradient(to right, #fb2e00, #F16529 );
 
   border-radius: 7px;
 
@@ -65,19 +65,14 @@
 }
 
 .container h1 a:hover {
-  background-color: #e7eff6;
-  color: #fb2e00;
-
-  box-shadow: 1px 4px 10px 1px #041a29;
   transform: translateY(-10px);
+
+  background: linear-gradient( #ca2601, #ca2601);
+  color: #e7eff6;
 }
 
 .container img {
   height: 55rem;
-}
-
-.container span {
-  color: #fb2e00;
 }
 
 .hidden {
@@ -114,14 +109,21 @@
   );
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  border-radius: 20px;
+  border-radius: 2rem;
   /* border: 1px solid rgba(255, 255, 255, 0.18); */
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
 
 span {
-  color: var(--color-terciary);
+  color: #fb2e00;
 }
+
+.gradient-text {
+  background-image: linear-gradient(50deg, #ff2a00, #fb603d, #f87457);
+  background-clip: text;
+  -webkit-background-clip: text; 
+  color: transparent; 
+} 
 
 .info h2 {
   font-size: var(--fs-header-sm);
@@ -205,7 +207,8 @@ span {
 .card {
   flex: 1;
   color: var(--color-secondary);
-  border-radius: 10px;
+
+  padding: 2rem;
 
   background: linear-gradient(
     135deg,
@@ -214,7 +217,7 @@ span {
   );
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  border-radius: 20px;
+  border-radius: 0 4rem;
   /* border: 1px solid rgba(255, 255, 255, 0.18);  */
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 
@@ -224,15 +227,13 @@ span {
 
 .card img {
   width: 100%;
-  border-radius: 10px 10px 0 0;
-  border-bottom: 4px solid #fb2e00;
+  border-radius: 0 3rem 0;
+  border-bottom: 4px solid #fb2e00;  
 }
 
 .card:hover {
   transform: translate(-5px, -10px);
   cursor: pointer;
-
-  /* box-shadow: 4px 4px 10px #0b324c; */
 }
 
 .card h2 {
@@ -459,7 +460,7 @@ h3 {
   font-size: var(--fs-body);
 
   color: #e7eff6;
-  background-color: var(--color-terciary);
+  background: linear-gradient(to right, #fb2e00, #F16529 );
 
   border-radius: 7px;
 
@@ -472,11 +473,10 @@ h3 {
 }
 
 .info-end a:hover {
-  background-color: #e7eff6;
-  color: #fb2e00;
-
-  box-shadow: 2px 4px 15px 1px #0b324c;
   transform: translateY(-10px);
+
+  background: linear-gradient( #ca2601, #ca2601);
+  color: #e7eff6;
 }
 
 /* Mobile */
