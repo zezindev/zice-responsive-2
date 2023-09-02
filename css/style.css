@@ -7,7 +7,7 @@
 :root {
   --ff-all: "Nunito", sans-serif;
   /* --bg-primary: #e7eff6; */
-  --bg-primary: #D6E2EF;
+  --bg-primary: #d6e2ef;
   --color-primary: #2d2d2d;
   --color-terciary: #fb2e00;
 
@@ -19,7 +19,7 @@
 
 .dark-theme {
   /* --bg-secondary: #021622; */
-  --bg-secondary: #070D29;
+  --bg-secondary: #070d29;
   --color-secondary: #e7eff6;
 }
 
@@ -97,19 +97,27 @@ header img {
 
 #contact {
   background: linear-gradient(to right, #fb2e00, #f16529);
+  box-shadow: 0 0.5rem 1.125rem -0.5rem rgba(251, 46, 0, 0.9);
 
   color: #e7eff6;
   border-radius: 7px;
   padding: 10px;
 }
 
-#contact:hover{
-  background: linear-gradient( #ca2601, #ca2601);
+#contact:hover {
+  background: linear-gradient(#ca2601, #ca2601);
   color: #e7eff6;
 }
 
 #logo {
   cursor: pointer;
+}
+
+.gradient-text {
+  background-image: linear-gradient(50deg, #ff2a00, #fb603d, #f87457);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .mobile-menu {
@@ -160,6 +168,7 @@ header img {
   justify-content: space-between;
 
   background-color: var(--color-terciary);
+  box-shadow: 0 0.5rem 1.125rem -0.5rem rgba(251, 46, 0, 0.9);
   border-radius: 50px;
 
   cursor: pointer;

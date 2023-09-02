@@ -7,7 +7,7 @@
 :root {
   --ff-all: "Nunito", sans-serif;
   /* --bg-primary: #e7eff6; */
-  --bg-primary: #D6E2EF;
+  --bg-primary: #d6e2ef;
   --color-primary: #2d2d2d;
   --color-terciary: #fb2e00;
 
@@ -19,7 +19,7 @@
 
 .dark-theme {
   /* --bg-secondary: #021622; */
-  --bg-secondary: #070D29;
+  --bg-secondary: #070d29;
   --color-secondary: #e7eff6;
 }
 
@@ -54,6 +54,7 @@
 
   color: #e7eff6;
   background: linear-gradient(to right, #fb2e00, #f16529);
+  box-shadow: 0 0.5rem 1.125rem -0.5rem rgba(251, 46, 0, 0.9);
 
   border-radius: 7px;
 
@@ -117,13 +118,6 @@
 
 span {
   color: #fb2e00;
-}
-
-.gradient-text {
-  background-image: linear-gradient(50deg, #ff2a00, #fb603d, #f87457);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
 }
 
 .info h2 {
@@ -461,6 +455,7 @@ h3 {
 
   color: #e7eff6;
   background: linear-gradient(to right, #fb2e00, #f16529);
+  box-shadow: 0 0.5rem 1.125rem -0.5rem rgba(251, 46, 0, 0.9);
 
   border-radius: 7px;
 

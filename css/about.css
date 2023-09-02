@@ -19,7 +19,7 @@
 
 .dark-theme {
   /* --bg-secondary: #021622; */
-  --bg-secondary: #070D29;
+  --bg-secondary: #070d29;
   --color-secondary: #e7eff6;
 }
 
@@ -34,27 +34,64 @@ span {
 
 .container {
   width: clamp(33rem, 80%, 150rem);
-  height: 50rem;
+  height: 55rem;
 
   margin: 0 auto 5rem;
 
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-
-  border-bottom: #fb2e00 4px solid;
+  text-align: center;
 }
 
 .container h1 {
-  font-size: var(--fs-header);
+  font-size: 8.5rem;
 }
 
 .container p {
   font-size: 2rem;
 }
 
-.container span {
+.container h1 a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-decoration: none;
+  font-size: 2rem;
+
+  color: #e7eff6;
+  background: linear-gradient(to right, #fb2e00, #f16529);
+  box-shadow: 0 0.5rem 1.125rem -0.5rem rgba(251, 46, 0, 0.9);
+
+  border-radius: 7px;
+
+  width: 17rem;
+  padding: 10px 0;
+  margin: 5rem auto 0;
+
+  position: relative;
+  transition: transform 0.3s ease-out;
+  transform: translateY(0);
+}
+
+.container h1 a:hover {
+  transform: translateY(-10px);
+
+  background: linear-gradient(#ca2601, #ca2601);
+  color: #e7eff6;
+}
+
+span {
   color: #fb2e00;
+}
+
+.gradient-text {
+  background-image: linear-gradient(50deg, #ff2a00, #fb603d, #f87457);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .container-content {
@@ -86,7 +123,7 @@ span {
   justify-content: center;
   align-items: center;
 
-   background: linear-gradient(
+  background: linear-gradient(
     135deg,
     rgba(255, 255, 255, 0.1),
     rgba(255, 255, 255, 0)
@@ -125,13 +162,13 @@ span {
 .img-info-two-div {
   width: clamp(33rem, 80%, 100rem);
   margin: auto;
-   padding: 3rem;
+  padding: 3rem;
 
   display: flex;
   justify-content: center;
   align-items: center;
 
-   background: linear-gradient(
+  background: linear-gradient(
     135deg,
     rgba(255, 255, 255, 0.1),
     rgba(255, 255, 255, 0)
@@ -206,9 +243,10 @@ span {
   width: 70%;
   border-radius: 100%;
   border: 4px solid transparent;
-  background: linear-gradient(#fb2e00, #F16529) padding-box,
-    linear-gradient(260deg, #fb2e00, #F16529) border-box;
+  background: linear-gradient(#fb2e00, #f16529) padding-box,
+    linear-gradient(260deg, #fb2e00, #f16529) border-box;
 
+  box-shadow: 0 0.5rem 1.125rem -0.5rem rgba(251, 46, 0, 0.9);
   transition: transform 0.3s ease-out;
   transform: translateY(0);
 }
@@ -225,7 +263,8 @@ span {
 
 .details {
   border-radius: 10px;
-  background: linear-gradient(to right, #fb2e00, #F16529 );
+  background: linear-gradient(to right, #fb2e00, #f16529);
+  box-shadow: 0 0.5rem 1.125rem -0.5rem rgba(251, 46, 0, 0.9);
   color: #e7eff6;
 
   margin: 90% auto;
@@ -392,7 +431,8 @@ details[open] summary {
   font-size: var(--fs-body);
 
   color: #e7eff6;
-  background: linear-gradient(to right, #fb2e00, #F16529 );
+  background: linear-gradient(to right, #fb2e00, #f16529);
+  box-shadow: 0 0.5rem 1.125rem -0.5rem rgba(251, 46, 0, 0.9);
 
   border-radius: 7px;
 
@@ -405,7 +445,7 @@ details[open] summary {
 }
 
 .section-media-text-last a:hover {
-  background: linear-gradient( #ca2601, #ca2601);
+  background: linear-gradient(#ca2601, #ca2601);
   color: #e7eff6;
 
   transform: translateY(-10px);
@@ -424,6 +464,22 @@ details[open] summary {
 }
 
 @media (max-width: 1020px) {
+  .container {
+    width: clamp(33rem, 80%, 100rem);
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .container h1 {
+    font-size: var(--fs-header);
+  }
+
+  .container p {
+    font-size: var(--fs-body);
+  }
+
   .section-margin-top {
     margin-top: 10rem;
   }
