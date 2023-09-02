@@ -6,7 +6,8 @@
 
 :root {
   --ff-all: "Nunito", sans-serif;
-  --bg-primary: #e7eff6;
+  /* --bg-primary: #e7eff6; */
+  --bg-primary: #D6E2EF;
   --color-primary: #2d2d2d;
   --color-terciary: #fb2e00;
 
@@ -17,7 +18,8 @@
 }
 
 .dark-theme {
-  --bg-secondary: #021622;
+  /* --bg-secondary: #021622; */
+  --bg-secondary: #070D29;
   --color-secondary: #e7eff6;
 }
 
@@ -29,6 +31,7 @@
   background-color: var(--color-terciary);
   border-radius: 10px;
 }
+
 /* Desktop */
 
 body {
@@ -66,7 +69,7 @@ body.dark-theme header {
 }
 
 body.dark-theme header {
-  box-shadow: 1px 2px 10px 1px #041a29;
+  box-shadow: 0 8px 30px 0 rgba(0, 0, 0, 0.37);
 }
 
 header {
@@ -78,11 +81,12 @@ header {
   width: 100%;
   padding: 2.5rem 0;
 
-  box-shadow: 1px 2px 10px 1px #bcbcbc;
-
   font-weight: 700;
 
   z-index: 1000;
+
+  border-radius: 0 0 2rem 2rem;
+  box-shadow: 0 8px 30px 0 rgba(0, 0, 0, 0.37);
 }
 
 header img {

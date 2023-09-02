@@ -18,7 +18,8 @@
 }
 
 .dark-theme {
-  --bg-secondary: #021622;
+  /* --bg-secondary: #021622; */
+  --bg-secondary: #070D29;
   --color-secondary: #e7eff6;
 }
 
@@ -33,7 +34,7 @@ span {
 
 .container {
   width: clamp(33rem, 80%, 150rem);
-  height: 40rem;
+  height: 50rem;
 
   margin: 0 auto 5rem;
 

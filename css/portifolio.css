@@ -18,7 +18,8 @@
 }
 
 .dark-theme {
-  --bg-secondary: #021622;
+  /* --bg-secondary: #021622; */
+  --bg-secondary: #070D29;
   --color-secondary: #e7eff6;
 }
 
