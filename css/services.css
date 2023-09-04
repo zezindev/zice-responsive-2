@@ -61,8 +61,7 @@ span {
 }
 
 .container h3 {
-  font-weight: 500;
-  font-size: 2rem;
+  font-size: 3.5rem;
 }
 
 .card-section {
@@ -124,6 +123,16 @@ span {
   font-size: var(--fs-body);
 
   width: 100%;
+}
+
+@media (max-width: 1230px) {
+  .container h1 {
+    font-size: var(--fs-header);
+  }
+
+  .container h3 {
+    font-size: var(--fs-header-sm);
+  }
 }
 
 @media (max-width: 500px){

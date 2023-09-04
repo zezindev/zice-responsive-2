@@ -47,11 +47,11 @@ span {
   font-size: 8.5rem;
 }
 
-.container p {
-  font-size: 2rem;
+.container h3 {
+  font-size: 3.5rem;
 }
 
-.container h1 a {
+.container-content a {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -75,7 +75,7 @@ span {
   transform: translateY(0);
 }
 
-.container h1 a:hover {
+.container-content a:hover {
   transform: translateY(-10px);
 
   background: linear-gradient(#ca2601, #ca2601);
@@ -471,12 +471,14 @@ details[open] summary {
     align-items: center;
   }
 
-  .container h1 {
-    font-size: var(--fs-header);
-  }
+  @media (max-width: 1230px) {
+    .container h1 {
+      font-size: var(--fs-header);
+    }
 
-  .container p {
-    font-size: var(--fs-body);
+    .container h3 {
+      font-size: var(--fs-header-sm);
+    }
   }
 
   .section-margin-top {
