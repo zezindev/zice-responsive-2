@@ -10,6 +10,7 @@
       href="./imgs/favicon-32x32.png"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/contact.css">
     <link
       href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap"
       rel="stylesheet"
@@ -54,20 +55,38 @@
           </ul>
         </nav>
       </header>
-      <div class="container">
-        <h1>
-          The <span>Solution</span> Arrived
-          <p>Take your business to the next <span>Level</span></p>
-          <a href="./hireus.html">Contact Us</a>
-        </h1>
-      </div>
-      <div class="container">
-        <h1>
-          The <span>Solution</span> Arrived
-          <p>Take your business to the next <span>Level</span></p>
-          <a href="./hireus.html">Contact Us</a>
-        </h1>
-      </div>
+     <div class="container">
+        <div class="form-container">
+            <h2>Formulário de Contato</h2>
+            <form action="process_form.php" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required><br><br>
+
+                <label for="servico">Selecione um serviço:</label>
+                <select id="servico" name="servico" required>
+                    <option value="Serviço 1">Serviço 1</option>
+                    <option value="Serviço 2">Serviço 2</option>
+                    <option value="Serviço 3">Serviço 3</option>
+                </select><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="mensagem">Mensagem:</label><br>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea><br><br>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+
+        <div class="contact-info-container">
+            <h2>Informações de Contato</h2>
+            <p>Endereço: Endereço da Sua Empresa</p>
+            <p>Telefone: (11) 1234-5678</p>
+            <p>Email: contato@suaempresa.com</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.67890!2d-123.456789!3d12.3456789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDEyJzU0LjAiTiAxMjPCsDAyJzM3LjciVw!5e0!3m2!1sen!2sus!4v1625667538748!5m2!1sen!2sus" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
       <footer>
         <div class="container-social">
           <a href="index.html"><img src="./imgs/zice.png" alt="ZICE Logo" /></a>
