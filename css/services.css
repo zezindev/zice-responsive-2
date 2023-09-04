@@ -40,7 +40,7 @@ span {
 .container {
   width: clamp(33rem, 80%, 150rem);
   margin: auto;
-  padding: 15rem 0 3rem;
+  padding: 20rem 0 3rem;
 
   display: flex;
   justify-content: center;
@@ -58,20 +58,32 @@ span {
 }
 
 .card-section {
-  max-width: clamp(33rem, 80%, 110rem);
+  max-width: clamp(33rem, 80%, 120rem);
 
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
+  gap: 3rem;
 
-  margin: 0 auto 10rem;
+  margin: 10rem auto 10rem;
 }
 
 .card {
-  padding: 0 0 5rem;
-  border-radius: 10px;
-  padding: 10px;
-  text-align: center;
+  display: flex;
+  justify-content: flex-start;
+  text-align: start;
+
+  padding: 4rem 3rem 2rem;
+  margin: 3rem 0;
+  border-radius: 1rem;
+
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.37);
 
   transition: transform 0.3s ease-out;
   transform: translateY(0);
@@ -83,20 +95,31 @@ span {
 }
 
 .card img {
-  max-width: 100%;
-  height: auto;
+  position: absolute;
+  top: -5rem;
+  left: 2rem;
+  height: 8rem;
+
+  background: linear-gradient(to right, #fb2e00, #f16529);
+  box-shadow: 0 0.5rem 1.125rem -0.5rem rgba(251, 46, 0, 0.9);
   border-radius: 10px;
+
+  padding: 10px;
+}
+
+.card h1{
+  padding: 1rem 0 2rem;
 }
 
 .card p {
-  margin-top: 10px;
+  font-weight: 500;
+  font-size: var(--fs-body);
+
+  width: 100%;
 }
 
-.card a {
-  text-decoration: none;
-  color: var(--color-secondary);
-}
-
-.card b {
-  border-bottom: 2px solid #fb2e00;
+@media (max-width: 500px){
+  .card-section {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
 }
