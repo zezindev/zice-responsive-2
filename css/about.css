@@ -114,7 +114,7 @@ span {
 }
 
 .img-info-div {
-  width: clamp(33rem, 80%, 100rem);
+  width: clamp(33rem, 80%, 110rem);
   margin: auto;
   padding: 3rem;
 
@@ -159,7 +159,7 @@ span {
 }
 
 .img-info-two-div {
-  width: clamp(33rem, 80%, 100rem);
+  width: clamp(33rem, 80%, 110rem);
   margin: auto;
   padding: 3rem;
 
@@ -224,7 +224,7 @@ span {
 }
 
 .section-colapse {
-  width: clamp(33rem, 80%, 100rem);
+  width: clamp(33rem, 80%, 110rem);
   display: flex;
   justify-content: space-between;
 
@@ -305,7 +305,7 @@ details[open] summary {
 }
 
 .partners-section {
-  width: clamp(33rem, 80%, 100rem);
+  width: clamp(33rem, 80%, 110rem);
 
   margin: 8rem auto 20rem;
 }
@@ -360,7 +360,7 @@ details[open] summary {
 }
 
 .section-media {
-  width: clamp(33rem, 80%, 100rem);
+  width: clamp(33rem, 80%, 110rem);
   padding: 20px;
   margin: 0 auto 10rem;
 }

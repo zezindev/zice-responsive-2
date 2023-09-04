@@ -88,7 +88,7 @@
 }
 
 .info {
-  width: clamp(33rem, 80%, 100rem);
+  width: clamp(33rem, 80%, 110rem);
 
   margin: 10rem auto 12rem;
   padding: 3rem;
@@ -165,7 +165,7 @@ span {
 }
 
 .info-two {
-  width: clamp(33rem, 80%, 100rem);
+  width: clamp(33rem, 80%, 110rem);
 
   margin: 8rem auto 0;
   text-align: center;
@@ -238,7 +238,7 @@ span {
 }
 
 .info-three {
-  width: clamp(33rem, 80%, 100rem);
+  width: clamp(33rem, 80%, 110rem);
 
   margin: 6rem auto 0;
   text-align: center;
@@ -384,7 +384,7 @@ h3 {
 }
 
 .section-tech {
-  width: clamp(33rem, 80%, 100rem);
+  width: clamp(33rem, 80%, 110rem);
   padding: 20px;
   margin: auto;
 }
@@ -630,9 +630,9 @@ h3 {
     margin: 0 auto;
   }
 
-    .div-img {
-      width: 100%;
-    }
+  .div-img {
+    width: 100%;
+  }
 }
 
 @media (max-width: 712px) {

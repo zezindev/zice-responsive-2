@@ -37,7 +37,7 @@ span {
   transform: translateY(0);
 }
 
-.minds {
+.container {
   width: clamp(33rem, 80%, 150rem);
   margin: auto;
   padding: 15rem 0 3rem;
@@ -49,16 +49,16 @@ span {
   text-align: center;
 }
 
-.minds h1 {
+.container h1 {
   font-size: var(--fs-header-sm);
 }
 
-.minds h3 {
+.container h3 {
   font-weight: 500;
 }
 
 .card-section {
-  max-width: clamp(33rem, 80%, 100rem);
+  max-width: clamp(33rem, 80%, 110rem);
 
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
