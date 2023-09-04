@@ -6,7 +6,6 @@
 
 :root {
   --ff-all: "Nunito", sans-serif;
-  /* --bg-primary: #e7eff6; */
   --bg-primary: #d6e2ef;
   --color-primary: #2d2d2d;
   --color-terciary: #fb2e00;
@@ -18,7 +17,6 @@
 }
 
 .dark-theme {
-  /* --bg-secondary: #021622; */
   --bg-secondary: #1c222e;
   --color-secondary: #e7eff6;
 }
@@ -525,20 +523,6 @@ h3 {
   }
 }
 
-@media (max-width: 912px) {
-  .container img {
-    height: 37rem;
-  }
-
-  .div-img #main-img {
-    height: 32rem;
-  }
-
-  .div-img #back-img {
-    height: 32rem;
-  }
-}
-
 @media (max-width: 830px) {
   .container {
     width: clamp(33rem, 80%, 100rem);
@@ -601,14 +585,6 @@ h3 {
     font-weight: 500;
   }
 
-  .div-img #main-img {
-    height: 30rem;
-  }
-
-  .div-img #back-img {
-    height: 30rem;
-  }
-
   .div-one {
     width: 100%;
     display: flex;
@@ -653,6 +629,10 @@ h3 {
   .outer-div {
     margin: 0 auto;
   }
+
+    .div-img {
+      width: 100%;
+    }
 }
 
 @media (max-width: 712px) {
