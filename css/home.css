@@ -24,8 +24,8 @@
 .container {
   width: clamp(33rem, 80%, 130rem);
   height: 80rem;
-  margin: 0 auto 25rem;
 
+  margin: 0 auto 25rem;
   padding-top: 15rem;
 
   display: flex;

@@ -1,14 +1,132 @@
-.container {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --ff-all: "Nunito", sans-serif;
+  --bg-primary: #e7eff6;
+  --color-primary: #2d2d2d;
+  --color-terciary: #fb2e00;
+
+  font-size: 62.5%;
+  --fs-body: 1.6rem;
+  --fs-header: clamp(4rem, 1rem + 5vw, 5.6rem);
+  --fs-header-sm: clamp(3rem, 0.5rem + 3vw, 4rem);
+}
+
+.dark-theme {
+  --bg-secondary: #1c222e;
+  --color-secondary: #e7eff6;
+}
+
+.div-h1-first {
+  width: clamp(33rem, 80%, 130rem);
+
+  margin: 0 auto 10rem;
+  padding-top: 15rem;
+
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+}
+
+.div-h1-first h1 {
+  font-size: 8.5rem;
+}
+
+.container-master {
+  width: clamp(33rem, 80%, 120rem);
+  margin: 0 auto 10rem;
+  padding: 5rem;
+
+  gap: 10%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 1rem;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
 
 .form-container {
-  width: 45%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
 }
 
-.contact-info-container {
-  width: 45%;
-  padding: 20px;
-  background-color: #f0f0f0;
+.form-container .form-column {
+  flex: 1;
+  min-width: 48%;
+}
+
+.form-container .form-column.full-width {
+  flex-basis: 100%;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  background: rgba(180, 180, 180, 0.6);
+
+  outline: none;
+}
+
+textarea {
+  max-width: 70rem;
+}
+
+.form-container .checkbox-label {
+  display: flex;
+  align-items: center;
+}
+
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.submit-button {
+  color: #e7eff6;
+  background: linear-gradient(to right, #fb2e00, #f16529);
+  box-shadow: 0 0.5rem 1.125rem -0.5rem rgba(251, 46, 0, 0.9);
+
+  width: 30%;
+  padding: 1rem 2rem;
+  margin-top: 2rem;
+
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+
+  position: relative;
+  transition: transform 0.3s ease-out;
+  transform: translateY(0);
+}
+
+.submit-button:hover {
+  transform: translateY(-10px);
+
+  background: linear-gradient(#ca2601, #ca2601);
+  color: #e7eff6;
 }

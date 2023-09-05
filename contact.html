@@ -10,7 +10,7 @@
       href="./imgs/favicon-32x32.png"
     />
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./css/contact.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap"
       rel="stylesheet"
@@ -55,38 +55,92 @@
           </ul>
         </nav>
       </header>
-     <div class="container">
-        <div class="form-container">
-            <h2>Formulário de Contato</h2>
-            <form action="process_form.php" method="post">
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required><br><br>
 
-                <label for="servico">Selecione um serviço:</label>
-                <select id="servico" name="servico" required>
-                    <option value="Serviço 1">Serviço 1</option>
-                    <option value="Serviço 2">Serviço 2</option>
-                    <option value="Serviço 3">Serviço 3</option>
-                </select><br><br>
+      <div class="div-h1-first hidden">
+        <h1><span class="gradient-text">Contact</span> Form</h1>
+      </div>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required><br><br>
+      <section>
+        <div class="container-master">
+          <div class="info">
+            <h1>Get In Touch</h1>
+            <p>
+              Have a project in mind? To request a quote contact us directly or
+              fill out the form and let us know how we can help.
+            </p>
 
-                <label for="mensagem">Mensagem:</label><br>
-                <textarea id="mensagem" name="mensagem" rows="4" required></textarea><br><br>
+            <div class="info-more">
+              <h1>Contact Info</h1>
+              <div class="info-item">
+                <p>Email</p>
+                <a href="#">contact@zice.com</a>
+              </div>
 
-                <input type="submit" value="Enviar">
-            </form>
+              <div class="info-item">
+                <p>Phone</p>
+                <a href="#">(514) 123-4567</a>
+              </div>
+
+              <div class="info-item">
+                <p>Headquarters</p>
+                <a href="#">Mont-Royal, Quebec, Canadá</a>
+              </div>
+            </div>
+          </div>
+          <div class="form-container">
+            <div class="form-column">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-column">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-column">
+              <label for="phone">Phone:</label>
+              <input type="text" id="phone" name="phone" required />
+            </div>
+            <div class="form-column">
+              <label for="subject">Subject:</label>
+              <select id="subject" name="subject">
+                <option value="geral"></option>
+                <option value="geral">General</option>
+                <option value="suporte">Suport</option>
+                <option value="vendas">Website</option>
+                <option value="vendas">Social Medias</option>
+              </select>
+            </div>
+            <div class="form-column full-width">
+              <label for="message">Menssage:</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+            <div class="form-column full-width">
+              <label class="checkbox-label">
+                <input
+                  type="checkbox"
+                  id="accept-terms"
+                  name="accept-terms"
+                  required
+                />
+                I agree to the Terms & Conditions
+              </label>
+            </div>
+            <div class="form-column full-width">
+              <button type="submit" class="submit-button">Enviar</button>
+            </div>
+            <div class="form-column full-width">
+              <label for="location">Localização no Mapa:</label>
+              <div id="map-container"></div>
+            </div>
+          </div>
         </div>
+      </section>
 
-        <div class="contact-info-container">
-            <h2>Informações de Contato</h2>
-            <p>Endereço: Endereço da Sua Empresa</p>
-            <p>Telefone: (11) 1234-5678</p>
-            <p>Email: contato@suaempresa.com</p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.67890!2d-123.456789!3d12.3456789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDEyJzU0LjAiTiAxMjPCsDAyJzM3LjciVw!5e0!3m2!1sen!2sus!4v1625667538748!5m2!1sen!2sus" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
-    </div>
       <footer>
         <div class="container-social">
           <a href="index.html"><img src="./imgs/zice.png" alt="ZICE Logo" /></a>
@@ -160,4 +214,5 @@
   </body>
   <script src="./js/script.js"></script>
   <script src="./js/menu.js"></script>
+  <script src="./js/animation.js"></script>
 </html>
