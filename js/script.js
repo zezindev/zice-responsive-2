@@ -17,3 +17,5 @@ chk.addEventListener("change", () => {
     localStorage.setItem("theme", "light")
   }
 })
+
+$("#phone").mask("(000)-000-0000")
