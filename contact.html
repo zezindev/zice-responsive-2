@@ -63,11 +63,13 @@
       <section>
         <div class="container-master">
           <div class="info">
-            <h1>Get In Touch</h1>
-            <p>
-              Have a project in mind? To request a quote contact us directly or
-              fill out the form and let us know how we can help.
-            </p>
+            <div class="info-more-one">
+              <h1>Get In Touch</h1>
+              <p>
+                Have a project in mind? To request a quote contact us directly
+                or fill out the form and let us know how we can help.
+              </p>
+            </div>
 
             <div class="info-more">
               <h1>Contact Info</h1>
@@ -85,58 +87,68 @@
                 <p>Headquarters</p>
                 <a href="#">Mont-Royal, Quebec, Canadá</a>
               </div>
+
+              <div class="form-column full-width">
+                <label for="location">Localização no Mapa:</label>
+                <div id="map-container"></div>
+              </div>
             </div>
           </div>
+
           <div class="form-container">
-            <div class="form-column">
-              <label for="name">Name:</label>
-              <input type="text" id="name" name="name" required />
-            </div>
-            <div class="form-column">
-              <label for="email">Email:</label>
-              <input type="email" id="email" name="email" required />
-            </div>
-            <div class="form-column">
-              <label for="phone">Phone:</label>
-              <input type="text" id="phone" name="phone" required />
-            </div>
-            <div class="form-column">
-              <label for="subject">Subject:</label>
-              <select id="subject" name="subject">
-                <option value="geral"></option>
-                <option value="geral">General</option>
-                <option value="suporte">Suport</option>
-                <option value="vendas">Website</option>
-                <option value="vendas">Social Medias</option>
-              </select>
-            </div>
-            <div class="form-column full-width">
-              <label for="message">Menssage:</label>
-              <textarea
-                id="message"
-                name="message"
-                rows="5"
-                required
-              ></textarea>
-            </div>
-            <div class="form-column full-width">
-              <label class="checkbox-label">
-                <input
-                  type="checkbox"
-                  id="accept-terms"
-                  name="accept-terms"
+            <form class="form-container" action="/email.php" method="post">
+              <div class="form-column">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+
+              <div class="form-column">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+
+              <div class="form-column">
+                <label for="phone">Phone:</label>
+                <input type="text" id="phone" name="phone" required />
+              </div>
+
+              <div class="form-column">
+                <label for="subject">Subject:</label>
+                <select id="subject" name="subject">
+                  <option value="geral"></option>
+                  <option value="geral">General</option>
+                  <option value="suporte">Suport</option>
+                  <option value="vendas">Website</option>
+                  <option value="vendas">Social Medias</option>
+                </select>
+              </div>
+
+              <div class="form-column full-width">
+                <label for="message">Menssage:</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
                   required
-                />
-                I agree to the Terms & Conditions
-              </label>
-            </div>
-            <div class="form-column full-width">
-              <button type="submit" class="submit-button">Enviar</button>
-            </div>
-            <div class="form-column full-width">
-              <label for="location">Localização no Mapa:</label>
-              <div id="map-container"></div>
-            </div>
+                ></textarea>
+              </div>
+
+              <div class="form-column full-width">
+                <label class="checkbox-label">
+                  <input
+                    type="checkbox"
+                    id="accept-terms"
+                    name="accept-terms"
+                    required
+                  />
+                  I agree to the Terms & Conditions
+                </label>
+              </div>
+
+              <div class="form-column full-width">
+                <input type="submit" class="submit-button" value="Submit" />
+              </div>
+            </form>
           </div>
         </div>
       </section>
@@ -212,6 +224,8 @@
       </div>
     </div>
   </body>
+  <script src="./js/jquery.mask.min.js"></script>
+  <script src="./js/mask.js"></script>
   <script src="./js/script.js"></script>
   <script src="./js/menu.js"></script>
   <script src="./js/animation.js"></script>
