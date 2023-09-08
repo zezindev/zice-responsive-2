@@ -1,16 +1,22 @@
 <?php 
 
+if (isset($_POST['email']) && !empty($_POST['email'])) {
+    $name = addslashes($_POST['name']);
+    $email = addslashes($_POST['email']);
+    $phone = addslashes($_POST['phone']);
+    $subjectContact = addslashes($_POST['subject']);
+    $message = addslashes($_POST['message']);
 
-$name = addcslashes($_POST(['name']));
-$email = addcslashes($_POST(['email']));
-$phone = addcslashes($_POST(['phone']));
-$subjectContact = addcslashes($_POST(['subject']));
-$message = addcslashes($_POST(['message']));
 
+    $to = "joselucasskt@gmail.com";
+    $subject = $subjectContact;
+    $body = "Name: " . $nome . "\r\n" . "Email: " . $email . "\r\n" . "Message: " . $message;
+    $header = "From:joselucasskt@gmail.com" . "\r\n" . "Reply-To:". $email . "\r\n" . "X=Mailer:PHP/" .phpversion();  
 
-$to = "joselucasskt@gmail.com";
-$subject = $subjectContact;
-$body = "Name: ".$nome. "\n";
-        "Email: ".$email. "\n";
-        "Message: ".$message;
+    if(mail($to,$subject,$body,$header)){
+        echo("Email successfully sent!");
+    }else{
+        echo("Failed to send email!");
+    }
+}
 ?>
