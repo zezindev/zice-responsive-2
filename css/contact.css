@@ -145,6 +145,8 @@ select {
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
+
+  color: #1c222e;
 }
 
 .form-container .checkbox-label {
