@@ -43,7 +43,7 @@ span {
 .container-master {
   width: clamp(33rem, 80%, 120rem);
   margin: 0 auto 10rem;
-  padding: 2rem;
+  padding: 5rem;
 
   gap: 10%;
 
@@ -228,7 +228,6 @@ input[type="checkbox"]:checked::before {
 
   .container-master {
     flex-direction: column;
-    /* padding: 2rem; */
   }
 
   .submit-button {
@@ -236,10 +235,10 @@ input[type="checkbox"]:checked::before {
   }
 }
 
-@media (max-width: 450px) {
-  /* .container-master {
-    padding: 2rem;
-  } */
+@media (max-width: 500px) {
+  .container-master {
+    padding: 3rem;
+  }
 
   .submit-button {
     width: 100%;
