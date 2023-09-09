@@ -70,7 +70,9 @@ span {
 .info {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
+
+  height: 100%;
 }
 
 .info-more {
@@ -100,6 +102,8 @@ span {
   flex-wrap: wrap;
   gap: 10px;
   justify-content: space-between;
+
+  height: 100%;
 }
 
 .form-column {
@@ -128,7 +132,7 @@ textarea {
   width: 100%;
 
   padding: 1.2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 15%;
 
   border: none;
   border-radius: 0.5rem;
@@ -220,6 +224,12 @@ input[type="checkbox"]:checked::before {
   font-weight: bold;
   background-color: #fb2e00;
   border-radius: 3px;
+}
+
+@media (max-width: 1200px) {
+  .submit-button {
+    width: 80%;
+  }
 }
 
 @media (max-width: 830px) {
