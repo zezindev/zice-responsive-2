@@ -43,7 +43,7 @@ span {
 .container-master {
   width: clamp(33rem, 80%, 120rem);
   margin: 0 auto 10rem;
-  /* padding: 5rem; */
+  padding: 2rem;
 
   gap: 10%;
 
