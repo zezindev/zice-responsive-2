@@ -139,6 +139,7 @@ textarea {
 
 textarea {
   max-width: 70rem;
+  max-height: 20rem;
 }
 
 select {
@@ -162,7 +163,7 @@ select #invisible {
 }
 
 input[type="checkbox"] {
-  margin-right: 5px;
+  margin-right: 0.5rem;
 }
 
 .submit-button {
@@ -236,10 +237,6 @@ input[type="checkbox"]:checked::before {
 }
 
 @media (max-width: 500px) {
-  .container-master {
-    padding: 3rem;
-  }
-
   .submit-button {
     width: 100%;
   }
