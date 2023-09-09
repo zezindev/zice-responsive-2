@@ -237,6 +237,10 @@ input[type="checkbox"]:checked::before {
 }
 
 @media (max-width: 500px) {
+  .container-master {
+    padding: 4rem;
+  }
+
   .submit-button {
     width: 100%;
   }
