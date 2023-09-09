@@ -141,6 +141,12 @@ textarea {
   max-width: 70rem;
 }
 
+select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
 .form-container .checkbox-label {
   display: flex;
   align-items: center;
