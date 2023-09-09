@@ -151,6 +151,9 @@ select {
 
 select #invisible {
   display: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
 }
 
 .form-container .checkbox-label {
