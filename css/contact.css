@@ -149,6 +149,10 @@ select {
   color: #1c222e;
 }
 
+select #invisible {
+  display: none;
+}
+
 .form-container .checkbox-label {
   display: flex;
   align-items: center;
@@ -190,7 +194,7 @@ input[type="checkbox"] {
   -webkit-appearance: none;
   width: 2rem;
   height: 2rem;
- 
+
   box-shadow: 0 0.5rem 1.125rem -0.5rem rgba(251, 46, 0, 0.9);
   border: 0.2rem solid #fb2e00;
   border-radius: 0.5rem;
