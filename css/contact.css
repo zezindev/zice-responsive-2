@@ -43,7 +43,7 @@ span {
 .container-master {
   width: clamp(33rem, 80%, 120rem);
   margin: 0 auto 10rem;
-  padding: 5rem;
+  padding: 4rem 5rem 4rem;
 
   gap: 10%;
 
@@ -103,7 +103,7 @@ span {
 .form-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 1rem;
   justify-content: space-between;
 }
 
@@ -239,6 +239,11 @@ input[type="checkbox"]:checked::before {
 }
 
 @media (max-width: 830px) {
+  .form-container .form-column {
+    flex: 1;
+    min-width: 100%;
+  }
+
   .div-h1-first h1 {
     font-size: var(--fs-header);
   }
