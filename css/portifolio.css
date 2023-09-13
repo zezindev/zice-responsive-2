@@ -133,7 +133,7 @@ span {
 .info-two {
   width: clamp(33rem, 80%, 110rem);
 
-  margin: 15rem auto 0;
+  margin: 17rem auto 5rem;
   text-align: center;
 
   color: var(--color-secondary);
@@ -146,7 +146,7 @@ span {
 .info-two h1 {
   font-size: var(--fs-header-sm);
 
-  margin-bottom: 2rem;
+  margin-bottom: 7rem;
 }
 
 .info-two h3 {
@@ -189,8 +189,8 @@ span {
 
 .depositions img {
   position: absolute;
-  top: -30%;
-  width: 20rem;
+  top: -6rem;
+  width: 17rem;
 }
 
 .depositions:hover {
@@ -200,25 +200,61 @@ span {
 
 .depositions h2 {
   margin-bottom: 1.5rem;
-  padding: 5px 0 0;
+  padding: 0.5rem 0 0;
 }
 
 .depositions p {
-  padding: 0 15px 15px;
+  padding: 0 1.5rem 1.5rem;
 }
 
 @media (max-width: 1230px) {
-  .depositions-container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-  }
-
   .container h1 {
     font-size: var(--fs-header);
   }
 
   .container h3 {
     font-size: var(--fs-header-sm);
+  }
+}
+
+@media (max-width: 985px) {
+  .depositions-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .depositions {
+    margin: 0 auto 15%;
+
+    width: 70%;
+  }
+}
+
+@media (max-width: 640px) {
+  .depositions {
+    margin: 0 auto 20%;
+
+    width: 80%;
+  }
+
+  .depositions img {
+    top: -4rem;
+    
+    width: 14rem;
+  }
+}
+
+@media (max-width: 530px) {
+  .depositions {
+    margin: 0 auto 20%;
+
+    width: 100%;
+  }
+
+  .depositions img {
+    top: -3rem;
+
+    width: 13rem;
   }
 }
