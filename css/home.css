@@ -54,10 +54,10 @@
   background: linear-gradient(to right, #fb2e00, #f16529);
   box-shadow: 0 0.5rem 1.125rem -0.5rem rgba(251, 46, 0, 0.9);
 
-  border-radius: 7px;
+  border-radius: 0.7rem;
 
   width: 17rem;
-  padding: 10px 0;
+  padding: 1rem 0;
   margin-top: 10%;
 
   position: relative;
@@ -78,7 +78,7 @@
 
 .hidden {
   opacity: 0;
-  transform: translateY(30px);
+  transform: translateY(3rem);
   transition: opacity 1s, transform 1s;
 }
 
@@ -92,7 +92,6 @@
 
   margin: 10rem auto 12rem;
   padding: 3rem;
-  border-radius: 10px;
 
   text-align: center;
 
@@ -108,10 +107,10 @@
     rgba(255, 255, 255, 0.1),
     rgba(255, 255, 255, 0)
   );
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border-radius: 2rem;
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  backdrop-filter: blur(1rem);
+  -webkit-backdrop-filter: blur(1rem);
+  border-radius: 1rem;
+  box-shadow: 0 0.8rem 3.2rem 0 rgba(0, 0, 0, 0.37);
 }
 
 span {
@@ -137,7 +136,7 @@ span {
   margin: auto;
   cursor: pointer;
 
-  border-radius: 10px;
+  border-radius: 1rem;
 }
 
 .div-img img {
@@ -149,11 +148,11 @@ span {
   margin: auto;
   cursor: pointer;
 
-  border-radius: 10px;
+  border-radius: 1rem;
 }
 
 .div-img img:hover {
-  transform: translate(-10px, -12px);
+  transform: translate(-1rem, -1.2rem);
 }
 
 .div-one {
@@ -208,10 +207,10 @@ span {
     rgba(255, 255, 255, 0.1),
     rgba(255, 255, 255, 0)
   );
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(1rem);
+  -webkit-backdrop-filter: blur(1rem);
   border-radius: 0 4rem;
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  box-shadow: 0 0.8rem 3.2rem 0 rgba(0, 0, 0, 0.37);
 
   transition: transform 0.3s ease-out;
   transform: translateY(0);
