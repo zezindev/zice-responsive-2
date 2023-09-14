@@ -178,7 +178,6 @@ select #invisible {
 }
 
 select {
-  content: "\25BC";
   background-image: url("/imgs/arrow.png");
   background-repeat: no-repeat;
   background-position: right;
