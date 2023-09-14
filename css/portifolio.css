@@ -84,23 +84,22 @@ span {
     rgba(255, 255, 255, 0.1),
     rgba(255, 255, 255, 0)
   );
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.37);
+  backdrop-filter: blur(1rem);
+  -webkit-backdrop-filter: blur(1rem);
+  box-shadow: 0 0.8rem 2rem 0 rgba(0, 0, 0, 0.37);
 
   transition: transform 0.3s ease-out;
   transform: translateY(0);
 }
 
 .card:hover {
-  transform: translate(-5px, -10px);
+  transform: translate(-0.5rem, -1rem);
   cursor: pointer;
 }
 
 .card img {
   max-width: 100%;
   height: auto;
-  border-radius: 10px;
 }
 
 .card a {
@@ -239,22 +238,16 @@ span {
   }
 
   .depositions img {
-    top: -4rem;
-    
-    width: 14rem;
+    top: -5rem;
+
+    width: 16rem;
   }
 }
 
 @media (max-width: 530px) {
   .depositions {
-    margin: 0 auto 20%;
+    margin: 0 auto 27%;
 
     width: 100%;
-  }
-
-  .depositions img {
-    top: -3rem;
-
-    width: 13rem;
   }
 }

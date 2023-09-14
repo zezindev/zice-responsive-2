@@ -21,6 +21,17 @@
   --color-secondary: #e7eff6;
 }
 
+.hidden {
+  opacity: 0;
+  transform: translateY(3rem);
+  transition: opacity 1s, transform 1s;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 span {
   color: #fb2e00;
 }
@@ -156,6 +167,7 @@ select {
   appearance: none;
 
   color: #1c222e;
+  padding-right: 20px;
 }
 
 select #invisible {
@@ -163,6 +175,14 @@ select #invisible {
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
+}
+
+select {
+  content: "\25BC";
+  background-image: url("/imgs/arrow.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 3rem auto;
 }
 
 .form-container .checkbox-label {
