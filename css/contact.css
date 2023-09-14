@@ -271,6 +271,13 @@ input[type="checkbox"]:checked::before {
     flex-direction: column;
   }
 
+  select {
+    background-image: url("/imgs/arrow.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 2rem auto;
+  }
+  
   .submit-button {
     width: 40%;
   }
