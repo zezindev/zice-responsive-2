@@ -206,6 +206,69 @@ span {
   padding: 0 1.5rem 1.5rem;
 }
 
+.section-end {
+  height: 48rem;
+  width: 100%;
+
+  margin: 10rem 0 0;
+
+  /* background-image: url(/imgs/man-pc-smile.png); */
+  background-image: url(https://zezindev.github.io/zice-responsive-2/imgs/man-pc-smile.png);
+  background-size: cover;
+  background-position: top;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.info-end {
+  position: relative;
+  right: 10%;
+}
+
+.info-end h1 {
+  font-size: var(--fs-header-sm);
+
+  color: #e7eff6;
+  margin: auto;
+}
+
+.info-end h2 {
+  color: #e7eff6;
+  margin: auto;
+}
+
+.info-end a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-decoration: none;
+  font-size: var(--fs-body);
+
+  color: #e7eff6;
+  background: linear-gradient(to right, #fb2e00, #f16529);
+  box-shadow: 0 0.5rem 1.125rem -0.5rem rgba(251, 46, 0, 0.9);
+
+  border-radius: 7px;
+
+  width: 18rem;
+  padding: 15px 0;
+  margin: 7% auto 0;
+
+  transition: transform 0.3s ease-out;
+  transform: translateY(0);
+}
+
+.info-end a:hover {
+  transform: translateY(-10px);
+
+  background: linear-gradient(#ca2601, #ca2601);
+  color: #e7eff6;
+}
+
 @media (max-width: 1230px) {
   .container h1 {
     font-size: var(--fs-header);
