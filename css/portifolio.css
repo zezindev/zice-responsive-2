@@ -207,10 +207,9 @@ span {
 }
 
 .section-end {
-  height: 48rem;
+  height: 65rem;
   width: 100%;
 
-  margin: 10rem 0 0;
 
   background-image: url(https://zezindev.github.io/zice-responsive-2/imgs/man-pc-smile-3.png);
   background-size: cover;
@@ -219,6 +218,7 @@ span {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  text-align: center;
 }
 
 .info-end {
@@ -289,6 +289,19 @@ span {
     margin: 0 auto 15%;
 
     width: 70%;
+  }
+}
+
+@media (max-width: 820px) {
+  .depositions #card3{
+    margin: 0 auto 10%;
+  }
+
+  .info-end {
+    position: relative;
+    right: 0;
+    margin: 0 auto;
+    padding: 0;
   }
 }
 
