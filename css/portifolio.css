@@ -286,7 +286,7 @@ span {
   }
 
   .depositions {
-    margin: 0 auto 15%;
+    margin: 0 auto 10%;
 
     width: 70%;
   }
@@ -294,7 +294,7 @@ span {
 
 @media (max-width: 820px) {
   .depositions #card3{
-    margin: 0 auto 10%;
+    margin: 0 auto 0;
   }
 
   .info-end {
