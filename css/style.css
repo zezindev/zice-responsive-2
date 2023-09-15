@@ -153,6 +153,7 @@ header img {
 
 .selected {
   border-bottom: 0.15pc solid var(--color-terciary);
+  box-shadow: 0 0.7rem 1.125rem -0.77rem rgba(251, 46, 0, 1);
 }
 
 .checkbox {
