@@ -130,7 +130,7 @@ span {
 }
 
 .info-two {
-  width: clamp(33rem, 80%, 110rem);
+  width: clamp(33rem, 80%, 120rem);
 
   margin: 17rem auto 5rem;
   text-align: center;
