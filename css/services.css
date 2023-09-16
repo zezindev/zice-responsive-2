@@ -114,7 +114,7 @@ span {
   padding: 10px;
 }
 
-.card h1{
+.card h1 {
   padding: 1rem 0 2rem;
 }
 
@@ -125,6 +125,78 @@ span {
   width: 100%;
 }
 
+.section-two {
+  width: clamp(33rem, 80%, 130rem);
+
+  margin: 8rem auto 0;
+  text-align: center;
+
+  color: var(--color-secondary);
+
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.section-two h1 {
+  font-size: var(--fs-header-sm);
+
+  margin-bottom: 2rem;
+}
+
+.section-two h3 {
+  font-weight: 500;
+}
+
+.card-container-two {
+  display: flex;
+  justify-content: center;
+
+  gap: 2%;
+  margin: 8rem 2rem;
+
+  position: relative;
+}
+
+.card-section-two {
+  flex: 1;
+  color: var(--color-secondary);
+  max-height: min-content;
+
+  padding: 2rem;
+
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(1rem);
+  -webkit-backdrop-filter: blur(1rem);
+  border-radius: 1rem;
+  box-shadow: 0 0.8rem 3.2rem 0 rgba(0, 0, 0, 0.37);
+
+  transition: transform 0.3s ease-out;
+  transform: translateY(0);
+}
+
+.card-section-two img {
+  width: 90%;
+}
+
+.card-section-two:hover {
+  transform: translate(-5px, -10px);
+  cursor: pointer;
+}
+
+.card-section-two h2 {
+  margin-bottom: 1.5rem;
+  padding: 5px 0 0;
+}
+
+.card-section-two p {
+  padding: 0 15px 15px;
+}
+
 @media (max-width: 1230px) {
   .container h1 {
     font-size: var(--fs-header);
@@ -133,9 +205,31 @@ span {
   .container h3 {
     font-size: var(--fs-header-sm);
   }
+
+  .info-two {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  #card3 {
+    margin-bottom: 0;
+  }
 }
 
-@media (max-width: 500px){
+@media (max-width: 1000px) {
+  .card-container-two {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 3rem;
+  }
+
+  .card-section-two {
+    margin-bottom: 5rem;
+  }
+}
+
+@media (max-width: 500px) {
   .card-section {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
