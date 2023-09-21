@@ -326,4 +326,11 @@ span {
   .card-section {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
+
+  .section-media-text-last {
+    background-image: url(https://zezindev.github.io/zice-responsive-2/imgs/woman-pc-4-3.png);
+
+    height: 44rem;
+  }
 }
+
