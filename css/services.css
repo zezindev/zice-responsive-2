@@ -222,12 +222,12 @@ span {
   height: 80rem;
 
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: center;
 }
 
 .section-media-text-last div {
-  margin-right: 40%;
+  margin-left: 10%;
 }
 
 .section-media-text-last h1 {
