@@ -222,12 +222,12 @@ span {
   height: 80rem;
 
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-end;
   align-items: center;
 }
 
 .section-media-text-last div {
-  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .section-media-text-last h1 {
@@ -293,6 +293,12 @@ span {
   .card-section-two {
     margin-bottom: 5rem;
   }
+
+  .section-media-text-last {
+    background-image: url(https://zezindev.github.io/zice-responsive-2/imgs/woman-pc-4-2.png);
+
+    height: 44rem;
+  }
 }
 
 @media (max-width: 830px) {
@@ -311,14 +317,6 @@ span {
 
   .section-media-text-last div {
     margin: 0;
-  }
-}
-
-@media (max-width: 705px) {
-  .section-media-text-last {
-    background-image: url(https://zezindev.github.io/zice-responsive-2/imgs/woman-pc-4-2.png);
-
-    height: 44rem;
   }
 }
 
