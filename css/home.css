@@ -648,7 +648,7 @@ h3 {
   .container img {
     height: 25rem;
   }
-  
+
   .tech-container {
     grid-template-columns: repeat(2, 1fr);
   }

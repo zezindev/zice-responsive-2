@@ -277,7 +277,7 @@ input[type="checkbox"]:checked::before {
     background-position: right;
     background-size: 2rem auto;
   }
-  
+
   .submit-button {
     width: 40%;
   }
